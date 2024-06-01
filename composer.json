@@ -1,0 +1,21 @@
+{
+  "name": "mrgrinder73/mymotorcycles",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "grinder",
+      "email": "grinder@simbirsk.ru"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "ext-pdo": "*",
+    "ext-mysqli": "*",
+    "ext-json": "*",
+    "ext-exif": "*",
+    "ext-dom": "*",
+    "smarty/smarty": "^v5.3.0"
+  }
+}
