@@ -4,42 +4,48 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitbe320797df9af0f2275244be7e26c531
+class ComposerStaticInit738f918faaefcfaab7a8738af0a41009
 {
-    public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        'c15d4a1253e33e055d05e547c61dcb71' => __DIR__ . '/..' . '/smarty/smarty/src/functions.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
-        'S' => 
+        'a' => 
         array (
-            'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Smarty\\' => 7,
+            'app\\' => 4,
+        ),
+        'C' => 
+        array (
+            'Core\\' => 5,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'app\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+            0 => __DIR__ . '/../..' . '/app',
         ),
-        'Smarty\\' => 
+        'Core\\' => 
         array (
-            0 => __DIR__ . '/..' . '/smarty/smarty/src',
+            0 => __DIR__ . '/../..' . '/core',
         ),
     );
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Core\\Controller' => __DIR__ . '/../..' . '/core/Controller.php',
+        'Core\\EasyORM' => __DIR__ . '/../..' . '/core/EasyORM.php',
+        'Core\\Model' => __DIR__ . '/../..' . '/core/Model.php',
+        'app\\Auth\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Auth/Controllers/AuthController.php',
+        'app\\Auth\\Models\\AuthModel' => __DIR__ . '/../..' . '/app/Auth/Models/AuthModel.php',
+        'app\\FileManager\\Controllers\\FileManagerController' => __DIR__ . '/../..' . '/app/FileManager/Controllers/FileManagerController.php',
+        'app\\Motorcycles\\Controllers\\MotorcyclesController' => __DIR__ . '/../..' . '/app/Motorcycles/Controllers/MotorcyclesController.php',
+        'app\\Motorcycles\\Models\\MotorcyclesModel' => __DIR__ . '/../..' . '/app/Motorcycles/Models/MotorcyclesModel.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitbe320797df9af0f2275244be7e26c531::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitbe320797df9af0f2275244be7e26c531::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitbe320797df9af0f2275244be7e26c531::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit738f918faaefcfaab7a8738af0a41009::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit738f918faaefcfaab7a8738af0a41009::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit738f918faaefcfaab7a8738af0a41009::$classMap;
 
         }, null, ClassLoader::class);
     }

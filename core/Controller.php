@@ -1,24 +1,39 @@
 <?php
 
-namespace core;
+namespace Core;
 
 class Controller
 {
     protected $config;
-    protected $database;
 
-    public static function init($config, $database)
+    /**
+     * @param array $config
+     * @return self
+     */
+    public static function init(array $config): Controller
     {
         $instance = new self();
         $instance->config = $config;
-        $instance->database = $database;
 
         return $instance;
     }
 
-    public function view($viewName, $data = [])
+    /**
+     * @param string $viewName
+     * @param array $data
+     * @return void
+     */
+    public function view(string $viewName, array $data = []): void
     {
+        $fullModuleName = '';
+        [$moduleName, $templateName] = explode('/', $viewName);
+
+        foreach (explode('_', $moduleName) as $moduleSubName) {
+            $fullModuleName .= ucfirst($moduleSubName);
+        }
+
         extract($data);
-        require_once '../app/Views/'. $viewName. '.php';
+
+        require_once "../app/{$fullModuleName}/Views/{$templateName}.php";
     }
 }

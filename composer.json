@@ -1,6 +1,6 @@
 {
   "name": "mrgrinder73/mymotorcycles",
-  "description": "description",
+  "description": "My motorcycles",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
@@ -15,7 +15,18 @@
     "ext-mysqli": "*",
     "ext-json": "*",
     "ext-exif": "*",
-    "ext-dom": "*",
-    "smarty/smarty": "^v5.3.0"
+    "ext-dom": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Core\\": "core",
+      "app\\": "app"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.3"
+    },
+    "optimize-autoloader": true
   }
 }

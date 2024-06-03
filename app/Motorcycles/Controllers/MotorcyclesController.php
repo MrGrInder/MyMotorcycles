@@ -2,7 +2,7 @@
 
 namespace app\Motorcycles\Controllers;
 
-use core\Controller;
+use Core\Controller;
 
 class MotorcyclesController extends Controller
 {

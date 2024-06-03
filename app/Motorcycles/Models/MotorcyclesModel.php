@@ -2,7 +2,7 @@
 
 namespace app\Motorcycles\Models;
 
-use core\Model;
+use Core\Model;
 
 class MotorcyclesModel extends Model
 {

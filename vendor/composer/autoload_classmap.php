@@ -7,4 +7,12 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
+    'Core\\Controller' => $baseDir . '/core/Controller.php',
+    'Core\\EasyORM' => $baseDir . '/core/EasyORM.php',
+    'Core\\Model' => $baseDir . '/core/Model.php',
+    'app\\Auth\\Controllers\\AuthController' => $baseDir . '/app/Auth/Controllers/AuthController.php',
+    'app\\Auth\\Models\\AuthModel' => $baseDir . '/app/Auth/Models/AuthModel.php',
+    'app\\FileManager\\Controllers\\FileManagerController' => $baseDir . '/app/FileManager/Controllers/FileManagerController.php',
+    'app\\Motorcycles\\Controllers\\MotorcyclesController' => $baseDir . '/app/Motorcycles/Controllers/MotorcyclesController.php',
+    'app\\Motorcycles\\Models\\MotorcyclesModel' => $baseDir . '/app/Motorcycles/Models/MotorcyclesModel.php',
 );
