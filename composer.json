@@ -1,0 +1,32 @@
+{
+  "name": "mrgrinder73/mymotorcycles",
+  "description": "My motorcycles",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "grinder",
+      "email": "grinder@simbirsk.ru"
+    }
+  ],
+  "require": {
+    "php": ">=7.3",
+    "ext-pdo": "*",
+    "ext-mysqli": "*",
+    "ext-json": "*",
+    "ext-exif": "*",
+    "ext-dom": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Core\\": "core",
+      "app\\": "app"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.3"
+    },
+    "optimize-autoloader": true
+  }
+}
