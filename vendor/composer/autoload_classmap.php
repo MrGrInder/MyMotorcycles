@@ -13,6 +13,7 @@ return array(
     'app\\Auth\\Controllers\\AuthController' => $baseDir . '/app/Auth/Controllers/AuthController.php',
     'app\\Auth\\Models\\AuthModel' => $baseDir . '/app/Auth/Models/AuthModel.php',
     'app\\FileManager\\Controllers\\FileManagerController' => $baseDir . '/app/FileManager/Controllers/FileManagerController.php',
+    'app\\FileManager\\Models\\FileManagerModel' => $baseDir . '/app/FileManager/Models/FileManagerModel.php',
     'app\\Motorcycles\\Controllers\\MotorcyclesController' => $baseDir . '/app/Motorcycles/Controllers/MotorcyclesController.php',
     'app\\Motorcycles\\Models\\MotorcyclesModel' => $baseDir . '/app/Motorcycles/Models/MotorcyclesModel.php',
 );

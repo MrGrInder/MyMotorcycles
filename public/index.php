@@ -11,7 +11,7 @@ Controller::init($config);
 $controllerName = 'Auth';
 $actionName = 'index';
 
-if (!empty($_SERVER['REQUEST_URI'])) {
+if (!empty($_SERVER['REQUEST_URI']) && $_SERVER['REQUEST_URI'] !== '/') {
     [$controllerName, $request] = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
     [$actionName] = explode('?', $request);
 }

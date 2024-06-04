@@ -21,7 +21,7 @@ class FileManagerController extends Controller
 
         $files = $fileManagerModel->getFiles($currentDirectory);
         $folders = $fileManagerModel->getFolders($currentDirectory);
-        [$prevDirectory, $currentDirectory] = $fileManagerModel->getSeparateDirectoryes($_GET['dir'] ?? '', empty($folders));
+        [$prevDirectory, $currentDirectory] = $fileManagerModel->getSeparateDirectories($_GET['dir'] ?? '');
 
         $this->view('file_manager/index', [
             'folders' => $folders,

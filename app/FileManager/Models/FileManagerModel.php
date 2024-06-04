@@ -48,10 +48,9 @@ class FileManagerModel extends Model
 
     /**
      * @param string $currentDirectory
-     * @param bool $isImpasse
      * @return array
      */
-    public function getSeparateDirectoryes(string $currentDirectory, bool $isImpasse = false): array
+    public function getSeparateDirectories(string $currentDirectory): array
     {
         $dirs = explode('/', $currentDirectory);
 

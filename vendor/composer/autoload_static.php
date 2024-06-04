@@ -36,6 +36,7 @@ class ComposerStaticInit738f918faaefcfaab7a8738af0a41009
         'app\\Auth\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Auth/Controllers/AuthController.php',
         'app\\Auth\\Models\\AuthModel' => __DIR__ . '/../..' . '/app/Auth/Models/AuthModel.php',
         'app\\FileManager\\Controllers\\FileManagerController' => __DIR__ . '/../..' . '/app/FileManager/Controllers/FileManagerController.php',
+        'app\\FileManager\\Models\\FileManagerModel' => __DIR__ . '/../..' . '/app/FileManager/Models/FileManagerModel.php',
         'app\\Motorcycles\\Controllers\\MotorcyclesController' => __DIR__ . '/../..' . '/app/Motorcycles/Controllers/MotorcyclesController.php',
         'app\\Motorcycles\\Models\\MotorcyclesModel' => __DIR__ . '/../..' . '/app/Motorcycles/Models/MotorcyclesModel.php',
     );
